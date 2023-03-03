@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Ordering App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="app-container">
+            <header>
+                <h1 class="header-title">Jimmy's Diner</h1>
+                <p class="header-text">The best burgers and pizzas in town.</p>
+            </header>
+            <main>
+                <section id="menu-container"></section>
+                
+                <section id="cart" class="cart hide">
+                    <h2 class="order-title">Your Order</h2>
+                    <div id="order" class="order"></div>
+                    <div id="total-price" class="total-price">
+                        <div>
+                            <h2 id="total-title" class="total-title">Total price:</h2>
+                            <p id="total" class="total"></p>
+                        </div>
+                    </div>
+                    <button id="finalize" class="finalize">Complete Order</button>
+                </section>
+                
+                <div id="order-complete-message"></div>
+                
+                <form id="payment-modal" class="payment-modal hide">
+                    <div class="payment-title">
+                        <h2>Enter card details</h2>
+                        <button id="close-modal">X</button>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+                    <input type="email" id="mail" name="mail" placeholder="Enter your email" required/>
+                    <input type="text" id="ccn" name="ccn" placeholder="Enter your credit card number" required/>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV" required/>
+                    <button type="submit" id="pay-btn">Pay<buttton>
+                </form>
+            </main>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
