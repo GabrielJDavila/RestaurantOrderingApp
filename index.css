@@ -178,6 +178,7 @@ input {
     inset: 0;
     margin: auto;
     width: 70%;
+    max-width: 500px;
     height: 450px;
     display: flex;
     flex-direction: column;
